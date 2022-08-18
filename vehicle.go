@@ -24,8 +24,11 @@ type Values struct {
 // Model array for the feedback.json file
 type Model struct {
 	Name     string   `json:"model"`
-	FeedBack []string `json:"feedback"`
+	Feedback []string `json:"feedback"`
 }
+
+var vehicleResult map[string]feedbackResult
+var inventory []vehicle
 
 type rating float32
 
@@ -53,7 +56,6 @@ func init() {
 		truck{"RAM1500", "Dodge", "Truck"}}
 
 	vehicleResult = make(map[string]feedbackResult)
-
 }
 
 func main() {
