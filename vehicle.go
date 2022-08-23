@@ -13,13 +13,13 @@ type vehicle interface {
 }
 
 type car struct {
-	make, model, typeVehicle string
+	model, make, typeVehicle string
 }
 type truck struct {
-	make, model, typeVehicle string
+	model, make, typeVehicle string
 }
 type bike struct {
-	make, model string
+	model, make string
 }
 type feedbackResult struct {
 	feedbackTotal, feedbackPositive, feedbackNegative, feedbackNeutral int
